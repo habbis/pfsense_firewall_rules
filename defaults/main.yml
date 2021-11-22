@@ -1,0 +1,7 @@
+---
+# defaults file for pfsense_firewall_rules
+#
+network_card: em1
+vlan: 0
+interface_name: yourinterface
+

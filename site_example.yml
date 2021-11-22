@@ -1,0 +1,13 @@
+---
+- name: pfsense firewall rules
+  gather_facts: no
+  remote_user: root
+  hosts: pfsense
+  collections:
+    - pfsensible.core
+  vars_files:
+    -  defaults/main.yml
+    #-  defaults/secrets.yml
+
+  roles:
+    - { role: ../pfsense_firewall_rules }
